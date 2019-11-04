@@ -1,0 +1,243 @@
+@media (max-width: 720px) {
+  body {
+    padding: 0.4em !important; }
+  .fixed-nav {
+    display: none; }
+  h1 {
+    font-size: 2em !important; }
+  .links a {
+    margin: 0 !important; }
+  .project.box {
+    border: none !important;
+    padding: 0.4em !important; } }
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  body {
+    padding: 2em 1em !important; } }
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  body {
+    padding: 2em !important; } }
+
+body {
+  background: #aaaaaa;
+  padding: 2em;
+  color: black;
+  font-size: 12px; }
+
+h1 {
+  color: black;
+  font-family: "Lora", serif;
+  font-weight: normal;
+  font-size: 4em;
+  padding: 0.1em 0;
+  margin: 0;
+  text-align: left; }
+
+h2 {
+  color: black;
+  font-size: 2em;
+  font-weight: normal;
+  padding: 0.4em 0;
+  -webkit-margin-after: 22px;
+  margin: 0;
+  font-family: "Lora", serif;
+  text-align: left; }
+
+h3 {
+  font-family: "Lora", serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  margin: 0.5em 0; }
+
+h4 {
+  color: black;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0.4em 0;
+  margin: 0;
+  font-family: "Lora", serif;
+  border-bottom: solid 1px black;
+  text-align: left;
+  display: inline-block; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
+.fixed-nav {
+  background: #aaaaaa;
+  position: fixed;
+  top: 38px;
+  right: 38px;
+  width: 116px;
+  height: calc(64*6);
+  border: solid 1px black; }
+
+.fixed-nav p {
+  padding: 0.2em 0;
+  margin: 0;
+  color: black;
+  font-family: "Lora", serif;
+  line-height: 1.2em;
+  text-align: center;
+  border-bottom: 1px solid black; }
+
+.fixed-nav img.nav-icon {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 58px;
+  cursor: help; }
+
+/* Hover tooltips */
+.tooltip {
+  position: relative; }
+
+span.tip-content {
+  position: absolute;
+  top: -1em;
+  width: auto;
+  color: black;
+  background: grey;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-out;
+  -moz-transition: opacity 100ms ease-out;
+  -ms-transition: opacity 100ms ease-out;
+  -o-transition: opacity 100ms ease-out;
+  transition: opacity 100ms ease-out; }
+
+.tooltip:hover .tip-content {
+  opacity: 1;
+  z-index: 2000; }
+
+.nav {
+  font-size: 1em;
+  height: 1em;
+  padding: 10px 0;
+  text-align: left;
+  border-bottom: solid 1px grey; }
+
+.navigation {
+  -webkit-margin-after: 22px; }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif; }
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
+.project.box {
+  margin: 2em 1em 2em 0;
+  padding: 4.4em; }
+
+.project p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  margin-top: 0; }
+
+.project p.type {
+  color: grey; }
+
+.project .desc {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1.6s ease; }
+
+.project:hover .desc {
+  max-height: 1000px; }
+
+.thumbnail {
+  width: 100%; }
+
+@keyframes breathing {
+  0%, 70% {
+    -webkit-transform: scale(0.92);
+    -ms-transform: scale(0.92);
+    transform: scale(0.92);
+    transform: translateY(-15px); }
+  25%, 100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transform: translateY(0); } }
+
+.octicon {
+  padding: 0 0.3em;
+  border: solid 1px grey;
+  float: right; }
+
+.about {
+  text-align: left; }
+
+.about ul {
+  padding: 0;
+  list-style: none;
+  font-size: 18px; }
+
+.about ul li.desc p {
+  color: black;
+  padding: 0; }
+
+.about ul li {
+  color: red; }
+
+.about ul li p {
+  color: black; }
+
+.links a {
+  font-family: "Lora", serif;
+  padding: 0.3em;
+  display: inline-block;
+  font-size: 22px;
+  border-left: solid 1px grey;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey; }
+
+.links a:last-child {
+  border-right: solid 1px grey; }
+
+.links a:hover {
+  color: black;
+  border-bottom: solid 1px black; }
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 800px; }
+
+.map #name {
+  position: absolute;
+  font-size: 44px;
+  top: 26%;
+  left: 20%;
+  background-color: #3397bf;
+  padding: 1em;
+  box-shadow: 0 0 70px 50px #aaaaaa inset;
+  display: inline-block;
+  z-index: 100; }
+
+.map .cloud {
+  font-family: "Lora", serif;
+  font-size: 40px;
+  background-color: grey;
+  padding: 0.6em;
+  box-shadow: 0 0 50px 30px #aaaaaa inset;
+  display: inline-block; }
+
+.map .cloud.link-1 {
+  position: absolute;
+  top: 45%;
+  right: 0; }
+
+.map .cloud.link-2 {
+  position: absolute;
+  left: 20%;
+  bottom: 24%; }
+
+.map .cloud.link-3 {
+  position: absolute;
+  left: 0;
+  top: 5%; }
